@@ -1,9 +1,8 @@
-```{css, echo=FALSE}
-
 body {
   position: relative;
   text-align: justify;
-  margin-bottom: 125px;}
+  margin-bottom: 125px;
+}
 
 img, figure {
   display: block;
@@ -16,7 +15,7 @@ img, figure {
 
 .custom-footer {
   background-color: white;
-  color: black;
+  color:  #003366;
   text-align: center;
   padding: 20px;
   position: fixed; 
@@ -25,7 +24,7 @@ img, figure {
   width: 100%; 
   height: 100px;
   z-index: 1000;
-  font-weight: bold;
+  font: helvetica;
 }
 
 .footer-logo {
@@ -37,11 +36,10 @@ img, figure {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Century', serif; 
+  font-family: 'century', serif; 
   color: #333333;
   font-weight: bold; 
   font-style: italic; 
-  
 }
 
 h1 {
@@ -63,11 +61,31 @@ h3 {
   padding: 10px;
 }
 
+/* Definir o estilo dos links do índice */
 #toc a {
   color: #333; /* Cor dos links no índice */
   text-decoration: none; /* Remove o sublinhado dos links */
 }
 
+/* Cor ao passar o mouse sobre o link */
 #toc a:hover {
-  color: #007BFF; /* Cor ao passar o mouse sobre o link */
+  color:  #003366 #006633; /* Cor ao passar o mouse sobre o link */
+}
+
+/* Garantir que apenas cabeçalhos (h1, h2, h3) sejam capturados no ToC */
+#toc h1, #toc h2, #toc h3, #toc h4, #toc h5, #toc h6 {
+  display: block;
+}
+
+/* Remover qualquer outro tipo de conteúdo dentro do ToC que não seja cabeçalhos */
+#toc img,
+#toc figure,
+#toc .figure,
+#toc .ggplot {
+  display: none !important; /* Garante que imagens e figuras não apareçam no ToC */
+}
+
+/* Esconder elementos gráficos como ggplot se forem associados ao ToC */
+#toc .ggplot {
+  display: none !important;
 }

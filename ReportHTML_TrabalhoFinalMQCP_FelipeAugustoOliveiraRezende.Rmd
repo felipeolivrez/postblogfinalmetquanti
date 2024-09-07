@@ -6,7 +6,7 @@ output:
   html_document:
     toc: true               
     toc_depth: 3            
-    toc_float: true         
+    toc_float: true
     css: stylesblog.css     
 ---
 ---
@@ -361,45 +361,156 @@ ggplot(prop_identitario_PDC2022, aes(x = Categoria, y = Proporcao)) +
 ---
 ## Resumo
 
-O objetivo deste modelo é identificar, sistematizar, apresentar e analisar as ações de difusão internacional da cultura do Brasil, a partir de dados oriundos da implementação do implementação da política pública de política externa *'Programa de Diplomacia Cultural'* (PDC), por parte da *Divisão de Operações de Difusão Cultural* (DODC), vinculada ao antigo *Departamento Cultural* (DC) [2013], e da *Divisão de Ações de Promoção da Cultura Brasileira* (DCULT), do atual *Instituto Guimarães Rosa* (IGC) [2022] do  Ministério de Relações Exteriores do Brasil (MRE/Itamaraty), como parte dos esfoços de diplomacia cultural mobilizados pela Política Externa Brasileira (PEB) nos exercícios anuais de 2013 e 2022. Para tanto, concebe a realização de pesquisa empírica baseada na análise de conteúdo de documentos oficiais relacionados ao expediente difusor, com suporte na metodologia *Cultural Diplomacy Data Analysis Framework (CDDAF)*, a fim de se identificar os número de projetos PDC implementado, os domínios culturais predominantemente empregados, destinatários (continente) e as proporções de paridade de gênero e raça nos conteúdos mobilizados pela diplomacia cultural do Brasil, entre nos anos de 2013 e 2022.
+O objetivo deste intrumento é identificar, sistematizar, apresentar e analisar as ações de difusão internacional da cultura do Brasil, a partir de dados oriundos da implementação da política pública de política externa *'Programa de Diplomacia Cultural'* (PDC), por parte da *Divisão de Operações de Difusão Cultural* (DODC), vinculada ao antigo *Departamento Cultural* (DC) [2013], e da *Divisão de Ações de Promoção da Cultura Brasileira* (DCULT), do atual *Instituto Guimarães Rosa* (IGC) [2022] do  Ministério de Relações Exteriores do Brasil (MRE/Itamaraty) nos exercícios anuais de 2013 e 2022. Para tanto, concebe a realização de pesquisa empírica baseada em análise de conteúdo de documentos oficiais relacionados a este expediente diplomático-cultural, com suporte na metodologia *Cultural Diplomacy Data Analysis Framework (CDDAF)*, a fim de se identificar os número de projetos PDC implementados; os domínios culturais predominantemente empregados; destinatários (continente) mais recorrentes; postos oficiais que mais implementa, e;  as proporções de paridade de gênero e raça nos conteúdos mobilizados nas ações/eventos de difusão internacional da cultura do Brasil, nos anos de 2013 e 2022.
 
 ---
 ---
 ## 1. Introdução
 
-Ao examinar o  processo histórico de institucionalização do pensamento de política externa no Brasil percebe-se que, em meados do século XX, o Ministério de Relações Exteriores do Brasil (MRE/Itamaraty) já envidava esforços com intuito de delinear os objetivos, desafios práticos e possibilidades para uma diplomacia cultural brasileira. Da formação de uma perspetiva autônoma até o envolvimento estratégico da chancelaria neste campo, é marcante o trabalho coletivo do corpo diplomático brasileiro através do tempo. Nesse decurso, o MRE/Itamaraty pavimentou caminho para a consecução de objetivos estratégicos de aproximação internacional pela via cultural. 
+Ao examinar o  processo histórico de institucionalização do pensamento de política externa no Brasil nota-se que, em meados do século XX, o Ministério de Relações Exteriores do Brasil (MRE/Itamaraty) já envidava esforços com intuito de configurar os objetivos,  possibilidades e desafios práticos para uma diplomacia cultural brasileira. Da formação de uma perspetiva autônoma até o envolvimento estratégico da chancelaria neste campo, é marcante o trabalho coletivo do corpo diplomático brasileiro através do tempo. Nesse decurso, o MRE/Itamaraty pavimentou caminho para a consecução de objetivos estratégicos de aproximação internacional pela via cultural. 
 
 Conforme identificado no exame criterioso da literatura existente, especialmente considerando os trabalhos de Herz (1987), Telles Ribeiro (1989), Lessa & Suppo (2007), Bijos & Arruda (2010), Lessa, Saraiva & Mappa (2012), Flechét (2012), Madeira (2013), Dummont (2012), Dummont & Flechét (2014), dentre outros, é patente, na evolução dos estudos sobre a diplomacia cultural brasileira, uma forte tendência por abordagens devotadas à apreciação historiográfica deste expediente. Neste prisma, a observação sobre o desenvolvimento das atividades de diplomacia cultural no âmbito da PEB é geralmente evocada a partir de esforços descritivos, no sentido de contar a evolução do tema conforme tratado pelo MRE/Itamaraty.
 
-Entendemos que essa característica resulta do fato de as contribuições nacionais sobre o tema derivarem mormente da interposição de análises produzidas no próprio seio da atividade diplomática, a exemplo do trabalho seminal do diplomata Edgar Telles Ribeiro (1989), ‘Diplomacia Cultural: seu papel na política externa brasileira’. Entretanto, como ressaltaram Vedoveli & Pinheiro (2012), a contribuição dos diplomatas brasileiros enquanto intelectuais, ou seja, sua atuação ora como burocratas e operadores da política externa do Brasil, ora como analistas da inserção internacional brasileira, ao ser assumida indistintamente, inclusive pelos acadêmicos stricto sensu, não foi sopesada pela devida consideração acerca dos eventuais efeitos desta dupla-inscrição sobre o conteúdo de suas interpretações (VEDOVELI & PINHEIRO, 2012).
+Entendemos que essa característica resulta do fato de as contribuições nacionais sobre o tema derivarem mormente da interposição de análises produzidas no próprio seio da atividade diplomática, a exemplo do trabalho seminal do diplomata Edgar Telles Ribeiro (1989), ‘Diplomacia Cultural: seu papel na política externa brasileira’. Entretanto, como ressaltam Vedoveli & Pinheiro (2012), a contribuição dos diplomatas brasileiros enquanto intelectuais, ou seja, sua atuação ora como burocratas e operadores da política externa do Brasil, ora como analistas da inserção internacional do país, ao ser assumida indistintamente (inclusive pelos acadêmicos stricto sensu), não foi sopesada pela devida consideração acerca dos eventuais efeitos desta dupla-inscrição sobre o conteúdo de suas interpretações.
 
-Não se negue o envolvimento salutar da chancelaria de Estado na área diplomático-cultural, há lacunas deixadas pelos estudos sobre a diplomacia cultural brasileira empenhados na chave da pesquisa histórica. Sem dúvidas, a principal lacuna epistêmica deixada pelos estudos histórico-descritivos em diplomacia cultural brasileira tem origem na forma de uma discussão pouco ou quase nada informada por evidências empíricas, senão por discursos oficiosos, em que chama a atenção a ausência de dados específicos sobre a formulação e implementação de políticas públicas de política externa na área diplomático-cultural.
+Não se negue o envolvimento salutar da chancelaria de Estado na área diplomático-cultural nas últimas décadas, há lacunas deixadas pelos estudos sobre a diplomacia cultural brasileira empenhados na chave da pesquisa histórica. Sem dúvidas, a principal lacuna epistêmica deixada pelos estudos histórico-descritivos em diplomacia cultural brasileira tem origem na forma de uma discussão pouco ou quase nada informada por evidências empíricas, senão por discursos oficiosos, em que chama a atenção a ausência de dados independentes e específicos a implementação de políticas públicas de política externa na área diplomático-cultural.
 
-A fim de buscar sanar, em partes, as lacunas deixadas pelas abordagens histórico-descritivas já existentes sobre a diplomacia cultural brasileira, o presente instrumento visa contribuir em propondo um modelo empírico para a compreensão circunstanciada e baseada em evidências sobre a implementação de ações de difusão internacional da cultura do Brasil sob o comando do MRE/Itamaraty. Este esforço se justifica, dada a necessidade de apreender a forma de conversão do vasto capital cultural do Brasil por parte do MRE/Itamaraty através de políticas públicas de difusão internacional da cultura brasileira, implementadas por meio de uma série de eventos e operações culturais do Brasil no exterior.
+A fim de buscar sanar, em partes, as lacunas deixadas pelas abordagens histórico-descritivas já existentes sobre a diplomacia cultural brasileira, o presente instrumento visa contribuir em propondo um modelo empírico para a compreensão baseada em evidências circunstanciadas acerca da implementação de ações de difusão internacional da cultura do Brasil sob o mandato institucional do MRE/Itamaraty. Este esforço se justifica, dada a necessidade de apreender a forma de conversão e auto-representação do vasto capital cultural do Brasil por parte do MRE/Itamaraty, por meio de políticas públicas de difusão internacional da cultura brasileira, implementadas na forma de ações, eventos e operações culturais do Brasil no exterior.
 
-No Brasil, o lócus de enunciação e construção de políticas públicas para a difusão internacional da cultura do Brasil é centralizado pela instituição diplomática oficialmente encarregada das agendas culturais. Atualmente, cabe ao *Instituto Guimarães Rosa* (IGR) do MRE/Itamaraty e suas divisões de trabalho, a funcionalização de expedientes relativos às ações de diplomacia cultural.  O predecessor do atual IGR, foram os Departamento Cultural e Educacional (DCED) e o Departamento Cultural (DC) do MRE/Itamaraty.
+No Brasil, o lócus de enunciação e construção de políticas públicas para a difusão internacional da cultura é centralizado pela instituição diplomática oficialmente encarregada das agendas culturais. Atualmente, cabe ao *Instituto Guimarães Rosa* (IGR) do MRE/Itamaraty e suas divisões de trabalho, a funcionalização de expedientes relativos às ações de diplomacia cultural.  O predecessor do atual IGR, foram os Departamento Cultural e Educacional (DCED) e o Departamento Cultural (DC) do MRE/Itamaraty, respectivamente.
 
-O IGR é atualmente a repartição pública responsável por propor e gestão das diretrizes da política externa no contexto das relações culturais e divulgação de informações sobre arte e cultura brasileira no exterior, bem como negociação de acordos e convenções culturais multilaterais, além de promover a cooperação acadêmica, científica e educacional, de acordo com as prioridades da Política Externa Brasileira (PEB), junto aos postos de representação oficial no exterior (Embaixadas, Consulados e/ou Delegações). Os postos interessados na construção de agendas culturais através da política pública ora disponível, *'Programa de Diplomacia Cultural'* (PDC),  submetem a solicitação de ações de difusão internacional ao DCED, que as analisa, aprova e administra de acordo com critérios específicos pré-determinados.
+O IGR é atualmente a repartição pública responsável por propor e gestão das diretrizes da política externa no contexto das relações culturais e divulgação de informações sobre arte e cultura brasileira no exterior, bem como negociação de acordos e convenções culturais multilaterais, além de promover a cooperação acadêmica, científica e educacional junto aos postos de representação oficial no exterior (Embaixadas, Consulados e/ou Delegações). Os postos interessados na construção de agendas culturais através da política pública ora disponível, *'Programa de Diplomacia Cultural'* (PDC),  submetem a solicitação de ações de difusão internacional ao DCED, que as analisa, aprova e administra de acordo com critérios específicos pré-determinados, em face das prioridades da Política Externa Brasileira (PEB), 
 
-O esforço central deste instrumento é justamente o de analisar dados da implementação de políticas públicas de diplomacia cultural do Brasil, a partir da observação do PDC nos anos de 2013 e 2023. Nesse sentido, o objetivo central do presente instrumento é o de Identificar, sistematizar e analisar dados relativos à implementação da política pública de política externa *'Programa de Diplomacia Cultural'* (PDC), por parte da *Divisão de Operações de Difusão Cultural* (DODC), vinculada ao antigo *Departamento Cultural* (DC) [2013], e da *Divisão de Ações de Promoção da Cultura Brasileira*, do atual *Instituto Guimarães Rosa* (IGC) [2022] do  Ministério de Relações Exteriores do Brasil (MRE/Itamaraty), como parte dos esfoços de diplomacia cultural mobilizados pela Política Externa Brasileira (PEB) nos exercícios anuais de 2013 e 2022.
+O esforço central deste instrumento é, justamente, o de identificar, sistematizar, apresentar e analisar dados da implementação de políticas públicas de diplomacia cultural do Brasil, a partir da observação do PDC nos exercícios anuais de 2013 e 2023. Com efeito, a unidade de análise assumida por este estudo é o *'Programa de Diplomacia Cultural'* (PDC) dos anos de 2013 e 2022; implementado anteriormente por parte da *Divisão de Operações de Difusão Cultural* (DODC), vinculada ao antigo *Departamento Cultural* (DC) [2013], e agora pela *Divisão de Ações de Promoção da Cultura Brasileira*, do atual *Instituto Guimarães Rosa* (IGC) [2022] do  Ministério de Relações Exteriores do Brasil (MRE/Itamaraty), como parte dos esfoços de diplomacia cultural mobilizados pela Política Externa Brasileira (PEB).
 
 ---
 ---
 ## 2. Método
 
-A pesquisa consistiu em esforços de coleta, codificação, tratamento e análise estatística de dados relativos a conteúdos, destinos e características identitárias marcantes nas ações/eventos de difusão internacional da cultura do Brasil, conforme facilitados através dos programas PDC 2013 e PDC 2022. O recorte temporal da pesquisa é arbitrário, mas pretende ilustrar, minimamente, a evolução diacrônica do expediente diplomática-cultural brasileiro a partir de dois exercícios anuais selecionados, quais sejam o de 2013 e 2022. Vale dizer que este intento faz parte de um desenho de pesquisa mais amplo, com recorte de 2013 a 2023. Aqui, buscou-se avaliar as relações entre algumas das variáveis de interesse no primeiro e no penúltimo ano do recorte temporal mais amplo.
+A pesquisa consistiu em esforços de coleta, codificação, tratamento e análise estatística de dados relativos a conteúdos, destinos e características identitárias marcantes nas ações/eventos de difusão internacional da cultura do Brasil, conforme facilitados através dos programas PDC 2013 e PDC 2022. O recorte temporal da pesquisa é arbitrário, mas pretende ilustrar, minimamente, a evolução diacrônica do expediente diplomática-cultural brasileiro a partir de dois exercícios selecionados: os anos 2013 **e** 2022. Vale dizer que este intento faz parte de um desenho de pesquisa mais amplo, com recorte de 2013 **a** 2023. Aqui, buscou-se avaliar as relações entre algumas das variáveis de interesse no primeiro e no penúltimo ano do recorte temporal mais amplo.
 
-Emprega-se o modelo metodológico **Cutural Diplomacy Data Analisys Framework (CDDAF)** (Carrijo, 2016), que implica ser o marco científico em se tratando do estudo baseado em evidências sobre a diplomacia cultural, tendo como unidade de análise primordial os chamados projetos de diplomacia cultural tocados pelos Estados, neste caso, os próprios PDC 2013 e PDC 2022 facilitado pelas repartições competentes do MRE/Itamaraty. Adota-se do modelo CDDAF os seguintes variáveis de pesquisa quantitativa/qualitativa sobre a diplomacia cultural brasileira: (1) **número de projetos**; (2) **domínio cultural**, e; (3) **destinação geográfica (continente)** das ações empenhadas; além de mais um indicador qualitativo subjacente qual seja: (a) **paridade e proporcionalidade de gênero e raça** nas ações/eventos implementados.
+Para isso, emprega-se o modelo metodológico **Cutural Diplomacy Data Analisys Framework (CDDAF)** (Carrijo, 2016), que implica ser marco científico específico em se tratando do estudo baseado em evidências sobre a diplomacia cultural, tendo como unidade de análise primordial os chamados projetos de diplomacia cultural tocados pelos Estados. Neste caso, os próprios PDC 2013 e PDC 2022, facilitado pelas repartições competentes do MRE/Itamaraty. Adota-se do modelo CDDAF os seguintes variáveis de interesse sobre a diplomacia cultural brasileira: (1) **número de projetos**; (2) **domínio cultural**, e; (3) **destinação geográfica (continente)** das ações/eventos empenhados; além de mais um indicador secundário, qual seja: (a) **paridade e proporcionalidade de gênero e raça** nas ações/eventos implementados.
 
-Em termos de fontes e coleta de dados empíricos, esta pesquisa usou de informações constantes nos chamados **Relatórios Anuais dos Programas PDC de 2013 e 2022**. Referidos documentos oficiais foram acessados via Lei de Acesso à Informação (LAI) n. 12527/11. A codificação e extração de informações expressas nestes Relatórios Anuais foi estritamente orientada pelo método CDDAF (Carrijo, 2016), e obedeceu à uma moldura de códigos e categorias informados tanto pela literatura quanto pelo próprio expediente prático da diplomacia cultural brasileira. A fase de codificação foi conduzida com o suporte de CAQDAS, nomeadamente o *Atlas.TI*.
 
-De posse dos dos já codificados, foram exportadas e construídas bases de dados distintas a partir de informações integrais oriundas dos mencionados **Relatórios Anuais dos PDC 2013 e 2022**. As variáveis quanti-quali (1) **número de projetos**; (2) **domínio cultural**, e; (3) **destinação geográfica (continente)** foram extraídas objetivamente, por meio da moldura de codificação e em face das evidências substantitvas documentadas na fonte em questão. O indicador qualitativo subjascente sobre a (a) **paridade e proporcionalidade de gênero e raça** foi atribuído a partir da reflexividade e posicionalidade do pesquisador diante dos dados expressos pelas fontes.
+A interposição do método *CDDAF* sobre dados relacionados à implementação do PDC 2013 e PDC 2022 está orientada a responder às seguintes questões de pesquisa: **(a)** *Qual a quantidade ('n') de ações/eventos PDC implementados em 2013 e em 2022? Houve incremento quantitativo nesse expediente?*; **(b)** *Quais as destinações (continentes) receberam  maior quantidade ('n') de ações/eventos PDC em 2013 e 2022?*; **(c)** *Quais os domínios culturais predominantes nas ações/eventos PDC em 2013 e 2022?*; **(d)** *Qual a proporcionalidade de indicadores indentitários de gênero e raça nos conteúdos artístico-culturais funcionalizados pelos PDC em 2013 e 2022?*.
 
-- *Análise Estatística*: construção de relações entre as variáveis quali-quanti de interesse, mensuração de estimativas intervalares e intervalos de confiança relacionados às quantidades e proporcionalidades alcançados pela rodagem do modelo, em face das amostras selecionadas. Foi empregado o software *R-Studio*, para tanto.
+Em termos de fontes e coleta de dados empíricos, esta pesquisa usou de informações constantes nos chamados **Relatórios Anuais dos Programas de Diplomacia Cultural (PDC), em 2013 e 2022**. Referidos documentos oficiais foram acessados via Lei de Acesso à Informação nº 12527/11 (LAI). A codificação e extração de informações expressas nestes *Relatórios Anuais* foi estritamente orientada pelo método CDDAF (Carrijo, 2016), e obedeceu à uma moldura de codificação informada tanto pela literatura quanto pelo próprio expediente prático da diplomacia cultural brasileira. A fase de codificação foi conduzida com o suporte de Computer Assisted Qualitative Data Analysis (CAQDAS), nomeadamente, o *Atlas.TI*.
+
+De posse dos dos já codificados, foram exportadas e ajustadas bases de dados distintas com informações integrais oriundas dos mencionados **Relatórios Anuais dos PDC 2013 e 2022**. As variáveis quanti-quali (1) **número de projetos**; (2) **domínio cultural**, e; (3) **destinação geográfica (continente)** foram extraídas objetivamente, por meio da moldura de codificação e em face das evidências substantitvas documentadas na fonte em questão. O indicador secundário sobre (a) **paridade e proporcionalidade de gênero e raça** foi atribuído na forma binária de marcardor de presença/não-presença, em cada ação/evento, a partir da reflexividade e posicionalidade do pesquisador diante dos dados das fontes.
+
+Em termos de análise estatísticas, este instrumentou buscou a construção de relações entre as variáveis quali-quanti de interesse, especialmente por meio da correlação de percentuais e proporções relacionados à cada variável. Para os indicadores secundários de (a) **paridade e proporcionalidade de gênero e raça**, especificamente, fez-se a mensuração de estimativas intervalares e intervalos de confiança relacionados às quantidades e proporcionalidades alcançados pela rodagem do model, em face das amostras selecionadas. Em todas operações para o tratamento, sistematização, apresentação e análise de dados, foi empregado o software *R-Studio*.
 
 ---
 ---
 ## 3. Análise
+
+A partir da interposição do método *CDDAF* sobre dados relacionados à implementação do PDC 2013 e PDC 2022 buscaremos responder às seguintes questões de pesquisa: 
+
+- **(a)** *Qual a quantidade ('n') de ações/eventos PDC implementados em 2013 e em 2022? Houve incremento quantitativo nesse expediente?*; 
+- **(b)** *Quais os domínios culturais predominantes nas ações/eventos PDC em 2013 e 2022?*; 
+- **(c)** *Quais as destinações (continentes) receberam  maior quantidade ('n') de ações/eventos PDC em 2013 e 2022?*; 
+- **(d)** *Qual a proporcionalidade de indicadores indentitários de gênero e raça nos conteúdos artístico-culturais funcionalizados pelos PDC em 2013 e 2022?*.
+
+Com relação à pergunta *(a)*, identificou-se que quantidade ('n') de ações/ventos PDC implementados em 2013 foi de: 243 (duzentos e quarenta e três) projetos; enquanto quantidade ('n') de ações/ventos PDC implementados em 2022 foi de: 587 (quinhentos e oitenta e sete) projetos.
+
+### 3.1. Domínios culturais predominantes no PDC 2013:
+
+Com relação à pergunta *(b)*, primeiramente identificou-se que os domínios culturais predominantes em 2013 foram: *Música*,*Artes Visuais*,*Literatura*, *Artes Combinadas* e *Artes Cênicas*, com valores nominais respectivos de 92, 54, 23, 23 e 17 ações/eventos PDC implementados em 2013.
+
+```{r, echo=FALSE, include=TRUE}
+
+print(n_dominiocultural2013)
+```
+
+```{r Chunk 28, include=TRUE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+ggplot(n_dominiocultural2013, aes(x = reorder(`Domínio Cultural`, Num_Eventos), y = Num_Eventos)) +
+  geom_bar(stat = "identity", fill = "#bd0026") +
+  coord_flip() +
+  theme_minimal() +
+  labs(title = "'N' Ações/Eventos PDC 2013 x Domínio Cultural",
+       x = "Domínio Cultural",
+       y = "Número de Eventos") +
+  scale_y_continuous(breaks = seq(0, max(n_dominiocultural2013$Num_Eventos), by = 10)) +
+  theme(
+    axis.text.x = element_text(angle = 90, hjust = 1),
+    plot.title = element_text(face = "bold"),
+    axis.title = element_text(face = "bold")
+  )
+```
+------------------------------------------------------------------------
+### 3.2. Domínios culturais predominantes no PDC 2022:
+
+Com relação à pergunta *(b)*, em seguida identificou-se que os domínios culturais predominantes em 2022 foram: *Música*,*Artes Visuais*, *Cinema e Audiovisual*, *Literatura* e *Artes Cênicas*, com valores nominais respectivos de 174, 109, 91, 59 e 36 ações/eventos PDC implementados em 2022.
+
+```{r, echo=FALSE, include=TRUE}
+
+print(n_dominiocultural2022)
+```
+
+```{r Chunk 30, include=TRUE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+ggplot(n_dominiocultural2022, aes(x = reorder(`Domínio Cultural`, Num_Eventos), y = Num_Eventos)) +
+  geom_bar(stat = "identity", fill = "#00441b") +
+  coord_flip() +
+  theme_minimal() +
+  labs(title = "'N' Ações/Eventos PDC 2022 x Domínio Cultural",
+       x = "Domínio Cultural",
+       y = "Número de Eventos") +
+  scale_y_continuous(breaks = seq(0, max(n_dominiocultural2022$Num_Eventos), by = 10)) +
+  theme(
+    axis.text.x = element_text(angle = 90, hjust = 1),
+    plot.title = element_text(face = "bold"),
+    axis.title = element_text(face = "bold")
+  )
+```
+------------------------------------------------------------------------
+### 3.3 Variação substantiva de 'n' de projetos PDC implementados por domínio cultural em 2013 e 2022 (valores nominais):
+
+Ainda com relação à pergunta *(b)*:
+
+A partir do cruzamento entre os domínios culturais mais empregagos pelo PDC em 2013 e 2022, identificou-se que os domínios *Música*,*Artes Visuais*,*Literatura* e *Artes Cênicas* permaneceram no ranking dos 5 (cinco) domínios culturais mais empregados no âmbito da implementação de ações/eventos PDC em ambos os anos.
+
+Os domínios culturais com maior variação substantiva em número de ações/eventos PDC implementados entre 2013 e 2022, foram *Cinema e Audiovisual*, *Música*, *Artes Visuais*, *Literatura* e *Patrimônio & Memória*, com acréscimos respectivos de 90, 82, 55, 36 e 26 ações/eventos PDC implementados em 2022.
+
+```{r Chunk 32, include=TRUE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+n_dominiocultural_long <- n_dominiocultural_long %>%
+  group_by(`Domínio Cultural`) %>%
+  mutate(is_last = ifelse(Ano == max(Ano), TRUE, FALSE))
+
+ggplot(n_dominiocultural_long, aes(x = Ano, y = Num_Eventos, group = `Domínio Cultural`, color = `Domínio Cultural`)) +
+  geom_line() +
+  geom_point() +
+  geom_text(data = filter(n_dominiocultural_long, is_last), aes(label = `Domínio Cultural`), hjust = -0.1, vjust = 0) +
+  labs(title = "Variação de 'N' Ações/Eventos PDC por Domínio Cultural entre 2013 e 2022",
+       x = "Ano",
+       y = "Número de Eventos",
+       color = "Domínio Cultural") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold"),
+    axis.title.x = element_text(face = "bold"),
+    axis.title.y = element_text(face = "bold"),
+    legend.position = "none"
+  )
+```
+------------------------------------------------------------------------
+### 3.4. Destinações geográficas (continentes) predominantes no PDC 2013:
+
+Com relação à pergunta *(c)*, primeiramente identificou-se que as destinações (continentes) mais recorrentes nos PDC 2013 foram: *Europa*,*América do Sul*, *América do Norte*, *Ásia & Oceania* e *África*, com valores nominais respectivos de 90, 41, 34, 31 e 23 ações/eventos PDC implementados em 2013.
+
+```{r, echo=FALSE, include=TRUE}
+
+# Ordena o dataframe n_continente2022 pela coluna 'Num_Eventos' em ordem decrescente
+n_continente2013_sorted <- n_continente2013[order(-n_continente2013$Num_Eventos), ]
+
+# Imprime apenas as primeiras e segundas colunas das primeiras 7 linhas do dataframe ordenado
+print(n_continente2013_sorted[1:7, 1:2])
+```
 
 ```{r Chunk 27, include=TRUE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
@@ -422,7 +533,7 @@ ggplot(n_continente2013, aes(ymax = posicao_final, ymin = posicao_inicio, xmax =
     legend.position = "right",
     plot.title = element_text(family = "sans", face = "bold", size = 16, hjust = 0.5)
   ) +
-  ggtitle("Proporção de 'N' Ações/Eventos PDC 2013 x Continente") +
+  ggtitle("% de 'N' Ações/Eventos PDC 2013 x Continente") +
   geom_text(
     aes(x = 3.5, y = posicao_label, label = label),
     color = "black",
@@ -431,24 +542,18 @@ ggplot(n_continente2013, aes(ymax = posicao_final, ymin = posicao_inicio, xmax =
   )
 ```
 ---
-```{r Chunk 28, include=TRUE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+### 3.5. Destinações geográficas (continentes) predominantes no PDC 2022:
 
-ggplot(n_dominiocultural2013, aes(x = reorder(`Domínio Cultural`, Num_Eventos), y = Num_Eventos)) +
-  geom_bar(stat = "identity", fill = "#bd0026") +
-  coord_flip() +
-  theme_minimal() +
-  labs(title = "'N' Ações/Eventos PDC 2013 x Domínio Cultural",
-       x = "Domínio Cultural",
-       y = "Número de Eventos") +
-  scale_y_continuous(breaks = seq(0, max(n_dominiocultural2013$Num_Eventos), by = 10)) +
-  theme(
-    axis.text.x = element_text(angle = 90, hjust = 1),
-    plot.title = element_text(face = "bold"),
-    axis.title = element_text(face = "bold")
-  )
+Com relação à pergunta *(c)*, em seguida identificou-se que as destinações (continentes) mais recorrentes nos PDC 2022 foram: *Europa*,*América do Sul*,*Ásia & Oceania*, *América do Norte* e *África*, com valores nominais respectivos de 224, 87, 82, 77 e 60 ações/eventos PDC implementados em 2022.
+
+```{r, echo=FALSE, include=TRUE}
+
+# Ordena o dataframe n_continente2022 pela coluna 'Num_Eventos' em ordem decrescente
+n_continente2022_sorted <- n_continente2022[order(-n_continente2022$Num_Eventos), ]
+
+# Imprime apenas as primeiras e segundas colunas das primeiras 7 linhas do dataframe ordenado
+print(n_continente2022_sorted[1:7, 1:2])
 ```
-------------------------------------------------------------------------
 ```{r Chunk 29, include=TRUE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
 
@@ -470,7 +575,7 @@ ggplot(n_continente2022, aes(ymax = posicao_final, ymin = posicao_inicio, xmax =
     legend.position = "right",
     plot.title = element_text(family = "sans", face = "bold", size = 16, hjust = 0.5)
   ) +
-  ggtitle("Proporção de 'N' Ações/Eventos PDC 2022 x Continente") +
+  ggtitle("% de 'N' Ações/Eventos PDC 2022 x Continente") +
   geom_text(
     aes(x = 3.5, y = posicao_label, label = label),
     color = "black",
@@ -478,32 +583,22 @@ ggplot(n_continente2022, aes(ymax = posicao_final, ymin = posicao_inicio, xmax =
     size = 5
   )
 ```
-------------------------------------------------------------------------
-```{r Chunk 30, include=TRUE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+---
+### 3.6 Variação percentual de 'n' de projetos PDC implementados por destinação geográfica (continente) em 2013 e 2022:
 
-ggplot(n_dominiocultural2022, aes(x = reorder(`Domínio Cultural`, Num_Eventos), y = Num_Eventos)) +
-  geom_bar(stat = "identity", fill = "#00441b") +
-  coord_flip() +
-  theme_minimal() +
-  labs(title = "'N' Ações/Eventos PDC 2022 x Domínio Cultural",
-       x = "Domínio Cultural",
-       y = "Número de Eventos") +
-  scale_y_continuous(breaks = seq(0, max(n_dominiocultural2022$Num_Eventos), by = 10)) +
-  theme(
-    axis.text.x = element_text(angle = 90, hjust = 1),
-    plot.title = element_text(face = "bold"),
-    axis.title = element_text(face = "bold")
-  )
-```
-------------------------------------------------------------------------
+Ainda relação à pergunta *(c)*:
+
+A partir do cruzamento entre as destinações geográficas (continentes) mais recorrentes nos PDC 2013 e 2022, identificou-se que os continentes *Europa*, *América do Sul*, *América do Norte*, *Ásia e Oceania* e *África* permaneceram no ranking dos 5 (cinco) continentes que mais receberam de ações/eventos PDC em ambos os anos.
+
+Estes mesmos continentes foram aqueles com maior variação substantiva em número de ações/eventos PDC implementados entre 2013 e 2022, com acréscimos de 134 (cento e trinta e quatro) para *Europa*, 51 para *Ásia e Oceania*, 46 para *América do Sul*, 43 para *América do Norte* e 37 para *África*.
+
 ```{r Chunk 31, include=TRUE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 ggplot(n_continente_long, aes(x = Ano, y = Num_Eventos, group = `Destinação (Continente)`, color = `Destinação (Continente)`)) +
   geom_line(linewidth = 0.75) +
   geom_point(size = 3) +
-  labs(title = "Variação do Número de ações/eventos PDC por Continente entre 2013 e 2022",
+  labs(title = "Variação de 'N' Ações/Eventos PDC por Continente entre 2013 e 2022",
        x = "Ano",
        y = "Número de Eventos",
        color = "Continente") +
@@ -514,32 +609,132 @@ ggplot(n_continente_long, aes(x = Ano, y = Num_Eventos, group = `Destinação (C
     axis.title = element_text(face = "bold")
   )
 ```
-------------------------------------------------------------------------
-```{r Chunk 32, include=TRUE}
+---
+### 3.7 Paridade/proporcionalidade de 'gênero', 'raça' e 'gênero & raça' nas ações/eventos PDC 2013 e 2022:
+
+Com relação à pergunta *(d)*, primeiramente identificou-se a proporção de ações/eventos PDC com marcadores identitários de *gênero*, *raça* e *gênero & raça* em face do total ('n') de projetos implementados no ano de 2013.
+
+Nestes indicadores identitários de *gênero/raça*, em especial, foram configuradas estimativas intervalares e intervalos de confiança (margem de erro) para as proporções calculadas. Para tanto configurou-se as seguintes hipóteses *H0* e *H1*:
+
+- **Hipótese Nula (H0)**: Não há diferença significativa entre as proporções de paridade de *gênero*, paridade de *raça* e paridade de *gênero & raça*, tanto para PDC 2013, quanto para PDC 2022.
+
+- **Hipótese Alternativa (H1)**: Há pelo menos uma diferença significativa entre as proporções de paridade de *gênero*, paridade de *raça* e paridade de *gênero & raça*, seja para PDC 2013 ou para PDC 2022. 
+
+Com efeito, a *Hipótese Nula (H0)* foi testada para ambos os casos, PDC 2013 e PDC 2022, e em todas as variáveis *gênero*, *raça* e *gênero & raça* do indicador identitário rodado pelo modelo CDDAF. A testagem de hipóteses foi interposta por meio de teste de qui-quadrado.
+
+#### 3.7.1 Estimativas intervalares para proporções de paridade *gênero/raça* nas ações/eventos PDC 2013:
+
+Para auferir a confibilidade dos valores de paridade identitária nos PDC 2013, os resultados do teste de qui-quadrado para as proporções de *gênero*, *raça* e *gênero & raça* acusou os seguintes coeficientes intervalares: 
+
+- *X-squared = 25.089*
+- *df = 2*
+- *p-value = 3.564e-06*
+
+```{r, echo=FALSE, include=TRUE}
+print(prop_identitario_PDC2013)
+```
+
+Intervalos de Confiança para proporções de paridade *gênero/raça* nas ações/eventos PDC 2013:
+
+```{r, echo=FALSE, include=TRUE}
+ggplot(prop_identitario_PDC2013, aes(x = Categoria, y = Proporcao)) +
+  geom_point(size = 3, colour = "#9A32CD") +
+  geom_errorbar(aes(ymin = CI_lower, ymax = CI_upper), width = 0.2, colour = "#9A32CD") + 
+  ylim(0, 1) +
+  labs(title = "Estimativas Intervalares (Proporção de Gênero/Raça nos Eventos Culturais PDC 2013)",
+       x = "Indicadores identitários PDC 2013",
+       y = "Proporção") +
+  theme_minimal(base_family = "Helvetica") +
+  theme(
+    panel.background = element_rect(fill = "black", colour = "black"),
+    plot.title = element_text(colour = "black", face = "bold"),
+    axis.title = element_text(colour = "black", face = "bold"),
+    axis.text = element_text(colour = "black"),
+    legend.text = element_text(color = "black"), 
+    legend.title = element_text(color = "black")
+  )
+```
+
+Dado que os coeficientes intervalares são estatísticamente irrelevantes, identificou-se, no PDC 2013, proporções médias de: 30% para paridade de gênero; 22% para paridade de raça, e; 11% para paridade de gênero & raça.
+
+#### 3.7.2 Estimativas intervalares para proporções de paridade *gênero/raça* nas ações/eventos PDC 2022:
+
+Para auferir a confibilidade dos valores de paridade identitária nos PDC 2022, os resultados do teste de qui-quadrado para as proporções de *gênero*, *raça* e *gênero & raça* acusou os seguintes coeficientes intervalares: 
+
+- *X-squared = 58.291*
+- *df = 2*
+- *p-value = 2.199e-13*
+
+```{r, echo=FALSE, include=TRUE}
+print(prop_identitario_PDC2022)
+```
+
+Intervalos de Confiança para proporções de paridade *gênero/raça* nas ações/eventos PDC 2022:
+
+```{r, echo=FALSE, include=TRUE}
+ggplot(prop_identitario_PDC2022, aes(x = Categoria, y = Proporcao)) +
+  geom_point(size = 3, colour = "#EE7600") +
+  geom_errorbar(aes(ymin = CI_lower, ymax = CI_upper), width = 0.2, colour = "#EE7600") + 
+  ylim(0, 1) +
+  labs(title = "Estimativas Intervalares (Proporção de Gênero/Raça nos Eventos Culturais PDC 2022)",
+       x = "Indicadores identitários PDC 2022",
+       y = "Proporção") +
+  theme_minimal(base_family = "Helvetica") +
+  theme(
+    panel.background = element_rect(fill = "black", colour = "black"),
+    plot.title = element_text(colour = "black", face = "bold"),
+    axis.title = element_text(colour = "black", face = "bold"),
+    axis.text = element_text(colour = "black"),
+    legend.text = element_text(color = "black"), 
+    legend.title = element_text(color = "black")
+  )
+```
+
+Dado que os coeficientes intervalares são estatísticamente irrelevantes, identificou-se, no PDC 2022, proporções médias de: 16% para paridade de gênero; 13% para paridade de raça, e; 3% para paridade de gênero & raça.
+
+#### 3.7.3 Interpretação dos testes de hipótese usando qui-quadrado sobre as confiabilidade das proporções de gênero/raça nas ações/eventos PDC 2013 e 2022:
+
+A partir do teste de qui-quadrado, identificou-se que o *p-valor* é muito menor que o nível de significância adotado de 0.05, para ambas as proporções de *gênero/raça*, tanto para PDC 2013, quanto para PDC 2022. Dado que o *p-valor* é significativamente menor que 0.05 para ambos PDC 2013 e PDC 2022, rejeita-se a *Hipótese Nula (H0)*. Portanto, corrobora-se a *Hipótese Alternativa (H1)*, de que há diferença(s) significativa(s) entre  as proporções de paridade de *gênero*, paridades de *raça* e paridade de *gênero & raça* nas ações/eventos PDC 2013 e PDC 2022.
+
+O teste de qui-quadrado  garantiu que as proporções de paridade *gênero/raça* calculadas possuem resíduos padronizados estatísticamente irrelevantes, atestando, portanto a confiabilidade dos percentuais de ações/eventos PDC com marcadores identitários em face do total de projetos PDC implementados em 2013 e 2022.
+
+Foi possível notar, conforme ilustra o gráfico abaixo, um decréscimo geral e significativo nas proporções de paridade *gênero/raça* nas ações/eventos PDC 2013 e PDC 202:. 
+
+- Houve decréscimo percentual de 45,56% no 'n' de ações/eventos com marcador de paridade de gênero PDC 2022 em relação ao 'n' de ações/eventos com marcadores de paridade de gênero PDC 2013.
+
+- Houve decréscimo percentual de 40,97% no 'n' de ações/eventos com marcador de paridade de raça PDC 2022 em relação ao 'n' de ações/eventos com marcadores de paridade de raça PDC 2013.
+
+- Houve decréscimo percentual de 73,38% no 'n' de ações/eventos com marcador de paridade de raça PDC 2022 em relação ao 'n' de ações/eventos com marcadores de paridade de gênero & raça PDC 2013.
+
+```{r Chunk 34, include=TRUE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
-n_dominiocultural_long <- n_dominiocultural_long %>%
-  group_by(`Domínio Cultural`) %>%
-  mutate(is_last = ifelse(Ano == max(Ano), TRUE, FALSE))
+percentuaistotais_paridade <- data.frame(
+  Indicador = rep(c("Paridade de Gênero", "Paridade de Raça", "Paridade de Gênero e Raça"), 2),
+  Percentual = c(percentuaistotais_paridade2013$Percentual, percentuaistotais_paridade2022$Percentual),
+  Ano = rep(c("2013", "2022"), each = 3)
+)
 
-ggplot(n_dominiocultural_long, aes(x = Ano, y = Num_Eventos, group = `Domínio Cultural`, color = `Domínio Cultural`)) +
-  geom_line() +
-  geom_point() +
-  geom_text(data = filter(n_dominiocultural_long, is_last), aes(label = `Domínio Cultural`), hjust = -0.1, vjust = 0) +
-  labs(title = "Variação do Número de ações/eventos PDC por Domínio Cultural entre 2013 e 2022",
-       x = "Ano",
-       y = "Número de Eventos",
-       color = "Domínio Cultural") +
+ggplot(percentuaistotais_paridade, aes(x = Indicador, y = Percentual, fill = Ano)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_fill_manual(values = c("2013" = "#9A32CD", "2022" = "#EE7600")) +
+  labs(title = "% de Paridade de Gênero, Raça e Gênero & Raça nos PDC 2013 e 2022",
+       x = "Indicador Identitário",
+       y = "Percentual (%)",
+       fill = "Ano") +
   theme_minimal() +
   theme(
     plot.title = element_text(face = "bold"),
     axis.title.x = element_text(face = "bold"),
-    axis.title.y = element_text(face = "bold"),
-    legend.position = "none"
+    axis.title.y = element_text(face = "bold")
   )
 ```
-------------------------------------------------------------------------
-```{r Chunk 33, include=TRUE}
+---
+### 3.8 Variação substantiva de Representações oficiais (postos) que mais imlementaram PDC em 2013 e 2022:
+
+**[PIRIRIPORORO]**
+
+```{r Chunk 33, include=TRUE, fig.cap=NULL}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 ranking_postos <- full_join(ranking_postos2013, ranking_postos2022, by = "Representação Oficial (Posto) responsável", suffix = c(".2013", ".2022")) %>%
@@ -555,7 +750,7 @@ ranking_postos <- ranking_postos %>%
 
 ggplot(ranking_postos, aes(x = reorder(`Representação Oficial (Posto) responsável`, -Total_Eventos), y = Total_Eventos, fill = Status)) +
   geom_bar(stat = "identity") +
-  labs(title = "Variação de Postos que mais implementaram ações/eventos PDC em 2013 e em 2022",
+  labs(title = "Postos que mais implementaram ações/eventos PDC em 2013 e em 2022",
        x = "Representação Oficial (Posto) responsável",
        y = "Total de Eventos por Posto") +
   scale_fill_manual(values = c("Repetido" = "#556B2F", "Somente 2013" = "#9A32CD", "Somente 2022" = "#EE7600")) +
@@ -567,39 +762,32 @@ ggplot(ranking_postos, aes(x = reorder(`Representação Oficial (Posto) respons�
   )
 ```
 ------------------------------------------------------------------------
-```{r Chunk 34, include=TRUE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-
-percentuaistotais_paridade <- data.frame(
-  Indicador = rep(c("Paridade de Gênero", "Paridade de Raça", "Paridade de Gênero e Raça"), 2),
-  Percentual = c(percentuaistotais_paridade2013$Percentual, percentuaistotais_paridade2022$Percentual),
-  Ano = rep(c("2013", "2022"), each = 3)
-)
-
-ggplot(percentuaistotais_paridade, aes(x = Indicador, y = Percentual, fill = Ano)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  scale_fill_manual(values = c("2013" = "#9A32CD", "2022" = "#EE7600")) +
-  labs(title = "Comparação dos Percentuais de Paridade de Gênero, Raça e Gênero & Raça",
-       x = "Indicador de Paridade",
-       y = "Percentual (%)",
-       fill = "Ano") +
-  theme_minimal() +
-  theme(
-    plot.title = element_text(face = "bold"),
-    axis.title.x = element_text(face = "bold"),
-    axis.title.y = element_text(face = "bold")
-  )
-```
----
 ## 4. Conclusões
 
-Conclui-se piriripororo também pesa sobre esse decurso a carência de estímulos renováveis, que, de maneira criativa, atualizem as operações culturais do Brasil exteriormente, a fim de contribuir para o engendramento de novas capacidades em política externa.
+Diante da interposição do método *Cultural Diplomacy Data Analysis Framework (CDDAF)* sobre conjuntos de dados da implementação da política pública de política externa *'Programa de Diplomacia Cultural'* (PDC), por parte da *Divisão de Operações de Difusão Cultural* (DODC), vinculada ao antigo *Departamento Cultural* (DC) e da *Divisão de Ações de Promoção da Cultura Brasileira* (DCULT), do atual *Instituto Guimarães Rosa* (IGC) do Ministério de Relações Exteriores do Brasil (MRE/Itamaraty) nos exercícios anuais de 2013 e 2022, concluí-se:
+
+No ano de 2013, foram implementados 243 (duzentos e quarenta e três) projetos PDC, dentre os quais os domínios culturais da *Música*,*Artes Visuais*,*Literatura*, *Artes Combinadas* e *Artes Cênicas* se destacam como os 5 (cinco) domínios culturais, expressivos e simbólicos mais empregados. Para *Música*,*Artes Visuais*,*Literatura*, *Artes Combinadas* e *Artes Cênicas*, identificou-se as respectivas inscrições nominais: 92, 54, 23, 23 e 17 ações/eventos PDC implementados em 2013. Do total de 243 (duzentos e quarenta e três) projetos PDC implementados em 2013, 30% tem *paridade de gênero*; 22% tem *paridade de raça*, e; 11% em *paridade de gênero & raça*. Em termos de destinações geográfica (continentes), *Europa*,*América do Sul*, *América do Norte*, *Ásia & Oceania* e *África*, foram os recebedores mais recorrentes nos PDC 2013, com valores nominais respectivos de 90, 41, 34, 31 e 23 ações/eventos PDC implementados em 2013.
+
+No ano de 2022, foram implementados 587 (quinhentos e oitenta e sete) projetos PDC, dentre os quais os domínios culturais da *Música*,*Artes Visuais*,*Literatura*, *Artes Combinadas* e *Artes Cênicas* se destacam como os 5 (cinco) domínios culturais, expressivos e simbólicos mais empregados. Para *Música*,*Artes Visuais*, *Cinema e Audiovisual*, *Literatura* e *Artes Cênicas*, identificou-se as respectivas inscrições nominais: 174, 109, 91, 59 e 36 ações/eventos PDC implementados em 2022. Do total de 587 (quinhentos e oitenta e sete) projetos PDC implementados em 2022, 16% tem *paridade de gênero*; 13% tem *paridade de raça*, e; 3% em *paridade de gênero & raça*. Em termos de destinações geográfica (continentes), *Europa*,*América do Sul*,*Ásia & Oceania*, *América do Norte* e *África*, foram os recebedores mais recorrentes nos PDC 2022, com valores nominais respectivos de 224, 87, 82, 77 e 60 ações/eventos PDC implementados em 2022.
+
+Em uma síntese estatística comparada em torno das varíaveis de interesse para o corrente instrumento, verificou-se, portanto: (i) aumento percentual de 141,56% no 'n' de ações/eventos PDC 2022 a PDC 2013; (ii) decréscimo percentual de 45,56% no 'n' de ações/eventos com marcador de paridade de gênero PDC 2022 em relação a PDC 2013; (iii) decréscimo percentual de 40,97% no 'n' de ações/eventos com marcador de paridade de raça PDC 2022 em relação a PDC 2013; (iv) decréscimo percentual de 73,38% no 'n' de ações/eventos com marcador de paridade de raça PDC 2022 em relação a PDC 2013.
+
+Diante da análise produzida, vale considerar algumas questões que podem servir de *insights* para a configuração de problemas e hipóteses de pesquisa em estudos futuros: 
+
+- (1) o aumento significativo de 141,56% no número de projetos PDC de 2013 a 2022 reflete um real incremento de recursos orçamentários para o exercício da diplomacia cultural por parte das repartições competentes do MRE/Itamaraty, ou uma diminuição no custo operacional para implementação de ações/eventos PDC?
+
+- (2) o decréscimo percentual geral de 45,56% no 'n' de ações/eventos com paridade de gênero; de 40,97% no 'n' de ações/eventos de paridade de raça, e; 73,38% no 'n' de ações/eventos com marcador de paridade de gênero & raça, do PDC 2022 em relação a PDC 2013, pode ser indicativo de novos padrões de preferência sobre os conteúdos e enunciadores de cultura brasileira mobilizadosna etapa de formulação das ações/eventos PDC? Esse fenômeno pode ser associado à uma mudança paradigmática nas prefereciais de Estado/governo em cada um dos anos?
+
+Ao fugir de um apreciação meramente histórico-descritiva sobre as políticas de diplomacia cultural brasileira, este instrumento buscou analisar, em diversos níveis, o emprego de aspectos da cultura brasileira como ativos de política externa do país. A partir dos dados identificados, sistematizados, apresentados e análisados sobre a implementação dos PDC 2013 e PDC 2022, pôde-se enfatizar a relevância de uma compreensão informada por evidências sobre a difusão itnernacional de aspectos de cultura genuínos do Brasil, para enunciários externos e comunidade brasileira residente no exterior. 
+
+Acredita-se que novos e consistentes estudos sobre a diplomacia cultural brasileira devem derivar, necessariamente, da consideração da política externa enquanto política burocrática. Nessa chave, é fundamental que novas abordagens centralizem cada vez mais a importância de se discutir formulação e implementação da diplomacia cultural brasileira enquanto processos de auto-representação institucional de uma ideia de cultura nacional, enquanto competência precípua do mandato das repartiações públicas do MRE/Itamaraty na seara cultural.
+
+Com efeito, o que se procura é perceber a diplomacia cultural como resultante de dinâmicas burocráticas e institucionais, bem como da performatividade dos fatores de cultura nacionais, sem desconsiderar o desafio imposto na atividade de difusão internacional da cultura do Brasil, dada a amplitude própria da diversidade cultural brasileira. Sem prejuízo, no entanto, da realização de críticas perante a gargalos operacionais que, direta ou indiretamente, reincidem no silenciamento de determinados agentes e subsetores nacionais de cultura, bem como no  privilégio conferido à determinados domínios culturais/destinações geográficas no âmbito do expediente da difusão internacional da cultura.
 
 ---
 ---
 
 <footer class="custom-footer">
   <img src="C:/Users/Felipe/Desktop/Doutorado IRel UnB/Disciplinas/[2024.1] MQCP/logo_unb.jpg" alt="Footer Logo" class="footer-logo">
-  <p>&copy; 2024 MQCP - Desenvolvido por Felipe Augusto Oliveira Rezende (231109414) como Trabalho Final à disciplina MQCP do PPGCP 1/2024</p>
-</footer>
+  <p>&copy; 2024 - Desenvolvido por **Felipe Augusto Oliveira Rezende** (231109414) como Trabalho Final à disciplina MQCP do PPGCP 1/2024</p>
 </footer>
